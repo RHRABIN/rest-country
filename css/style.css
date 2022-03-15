@@ -1,0 +1,26 @@
+#countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.country{
+    border: 3px solid tomato;
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.country img{
+    width: 250px;
+}
+@media only screen and  (max-width: 680px){
+    #countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and  (max-width: 980px){
+    #countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
